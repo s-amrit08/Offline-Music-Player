@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!--The below div contaisn the top bar of the player-->
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i id="close-player" class="material-icons">close</i>
+        </div>
+
+        <!--Now comes the area where the track image is displayed-->
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+
+        <!--The container below contains song details-->
+        <div class="song-details">
+            <p class="name">Ages and Ages</p>
+            <p class="artist">Divisionary</p>
+        </div>
+
+        <!--The next container contains the progress bar-->
+        <div class="progress-area">
+            <div class="progress-bar">
+                <span></span>
+            </div>
+            <div class="timer">
+                <span class="current"></span>
+                <span class="duration"></span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+
+
+        </div>
+        
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i> <!--When we hover over the repeat icon it shows the title-->
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+            <i id="repeat-plist" class="material-icons">play_arrow</play-arrow></i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>        
+        
+        </div>
+
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+        
+            <ul> 
+                <!--While creating css, humne 5 li create kre the, for making css.Now, Saare songs hatadiye, dynamically add hogi list ab-->
+                <!-- <li>
+                    <div class="row">
+                        <span>Ikson Anywhere - Ikson</span>
+                        <p>Audio Library</p>
+                    </div>
+                    <span class="audio-duration">3:40</span>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="music-list.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
